@@ -30,22 +30,23 @@ const Header: FC = () => {
             maxWidth: '1440px',
             width: '100%',
             position: 'relative',
-
-            padding: '0px 10px',
-            '@media (min-width: 480px)': {
-              padding: '0px 16px'
+            '@media (max-width: 1440px)': {
+              padding: '0px 36px'
             },
-            '@media (min-width: 768px)': {
-              padding: '0px 20px'
-            },
-            '@media (min-width: 992px)': {
-              padding: '0px 16px'
-            },
-            '@media (min-width: 1280px)': {
+            '@media (max-width: 1280px)': {
               padding: '0px 40px'
             },
-            '@media (min-width: 1440px)': {
-              padding: '0px 36px'
+            '@media (max-width: 992px)': {
+              padding: '0px 16px'
+            },
+            '@media (max-width: 768px)': {
+              padding: '0px 20px'
+            },
+            '@media (max-width: 480px)': {
+              padding: '0px 16px'
+            },
+            '@media (max-width: 320px)': {
+              padding: '0px 10px'
             }
           }}
         >
