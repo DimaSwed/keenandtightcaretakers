@@ -147,18 +147,20 @@ const TechBlock: FC = () => {
             consistency, and sustainability. From small batches to large-scale production, achieve
             perfect roasts every time.
           </Typography>
-          <BlackButton
-            type="submit"
-            variant="contained"
-            sx={{
-              maxWidth: '340px',
-              width: '100%',
-              height: '58px',
-              '@media (max-width: 768px)': { maxWidth: '100%' }
-            }}
-          >
-            {'Connect Us'}
-          </BlackButton>
+          <a href="#form-section" style={{ textDecoration: 'none' }}>
+            <BlackButton
+              type="button" // Измените на "button", чтобы предотвратить отправку формы
+              variant="contained"
+              sx={{
+                maxWidth: '340px',
+                width: '100%',
+                height: '58px',
+                '@media (max-width: 768px)': { maxWidth: '100%' }
+              }}
+            >
+              {'Connect Us'}
+            </BlackButton>
+          </a>
         </Stack>
       </Box>
     </Box>

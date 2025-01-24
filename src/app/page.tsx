@@ -1,3 +1,4 @@
+import AboutBlock from '@/components/AboutBlock/AboutBlock'
 import Form from '@/components/FormBlock/FormBlock'
 import Header from '@/components/Header/Header'
 import TechBlock from '@/components/TechBlock/TechBlock'
@@ -23,6 +24,7 @@ export default function Home() {
     >
       <Header />
       <TechBlock />
+      <AboutBlock />
       <Box sx={{ backgroundColor: 'background.paper' }}>
         <Form />
       </Box>

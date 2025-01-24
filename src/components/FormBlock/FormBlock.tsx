@@ -6,7 +6,7 @@ import styles from '../FormBlock/Form.module.sass'
 
 const Form: FC = () => {
   return (
-    <div className={styles.formContainer}>
+    <div className={styles.formContainer} id="form-section">
       <Box
         sx={{
           display: 'flex',
