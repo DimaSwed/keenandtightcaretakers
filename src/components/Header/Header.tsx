@@ -30,6 +30,7 @@ const Header: FC = () => {
             maxWidth: '1440px',
             width: '100%',
             position: 'relative',
+            padding: '0px 40px',
             '@media (max-width: 1440px)': {
               padding: '0px 36px'
             },
