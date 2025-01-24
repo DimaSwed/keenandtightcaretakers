@@ -1,10 +1,9 @@
 'use client'
 import React, { FC } from 'react'
-import { Box, Typography, Snackbar, Alert } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { BurgerButton } from './Burger'
 import { MobileNav } from './MobileNav'
 import Link from 'next/link'
-import { RootState } from '@/store/store'
 import Logo from '@/common/ui-kit/Logo'
 import HeaderListMenu from './HeaderListMenu'
 
