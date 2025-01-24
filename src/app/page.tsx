@@ -1,5 +1,6 @@
 import Form from '@/components/FormBlock/FormBlock'
 import Header from '@/components/Header/Header'
+import TechBlock from '@/components/TechBlock/TechBlock'
 import { Box, Stack } from '@mui/material'
 
 export const metadata = {
@@ -21,7 +22,7 @@ export default function Home() {
       }}
     >
       <Header />
-
+      <TechBlock />
       <Box sx={{ backgroundColor: 'background.paper' }}>
         <Form />
       </Box>

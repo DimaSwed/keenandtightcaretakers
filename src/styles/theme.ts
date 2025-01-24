@@ -14,8 +14,8 @@ const lightTheme = createTheme({
       fontWeight: 400,
       fontSize: '26px',
       lineHeight: '120%',
-      transition: 'font-size 2s ease'
-      // '@media (max-width:1440px)': { fontSize: '20px' },
+      transition: 'font-size 2s ease',
+      '@media (max-width:768px)': { fontSize: '22px' }
       // '@media (max-width:720px)': { fontSize: '18px' },
       // '@media (max-width:500px)': { fontSize: '16px' }
     },
@@ -61,15 +61,10 @@ const lightTheme = createTheme({
       lineHeight: '100%',
       textTransform: 'none',
       transition: 'font-size 2s ease',
-      '@media (min-width: 1650px) and (max-width: 1780px)': {
-        // fontSize: '90px',
-      },
-      '@media (min-width: 1580px) and (max-width: 1649px)': {
-        // fontSize: '85px',
-      },
-      '@media (min-width: 1330px) and (max-width: 1579px)': {
-        // fontSize: '80px',
-      }
+      '@media (max-width:1280px)': { fontSize: '82px' },
+      '@media (max-width:768px)': { fontSize: '68px' },
+      '@media (max-width:480px)': { fontSize: '48px', fontWeight: '400' },
+      '@media (max-width:320px)': { fontSize: '31px' }
     },
     h2: {
       fontFamily: 'Poppins',
