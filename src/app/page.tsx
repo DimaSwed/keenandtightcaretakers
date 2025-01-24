@@ -1,7 +1,8 @@
-import AboutBlock from '@/components/AboutBlock/AboutBlock'
-import Form from '@/components/FormBlock/FormBlock'
 import Header from '@/components/Header/Header'
 import TechBlock from '@/components/TechBlock/TechBlock'
+import AboutBlock from '@/components/AboutBlock/AboutBlock'
+import Form from '@/components/FormBlock/FormBlock'
+import Footer from '@/components/Footer/Footer'
 import { Box, Stack } from '@mui/material'
 
 export const metadata = {
@@ -27,6 +28,9 @@ export default function Home() {
       <AboutBlock />
       <Box sx={{ backgroundColor: 'background.paper' }}>
         <Form />
+      </Box>
+      <Box sx={{ backgroundColor: 'text.primary' }}>
+        <Footer />
       </Box>
     </Stack>
   )

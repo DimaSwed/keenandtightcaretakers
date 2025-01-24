@@ -45,14 +45,15 @@ const lightTheme = createTheme({
       // '@media (max-width:1440px)': { fontSize: '15px' },
       // '@media (max-width:720px)': { fontSize: '14px' }
     },
-    // subtitle2: {
-    //   fontWeight: 400,
-    //   fontSize: '14px',
-    //   lineHeight: '130%',
-    //   transition: 'font-size 2s ease',
-    //   '@media (max-width:1440px)': { fontSize: '13px' },
-    //   '@media (max-width:720px)': { fontSize: '12px' }
-    // },
+    subtitle2: {
+      fontFamily: 'Helvetica Neue',
+      fontWeight: 500,
+      fontSize: '20px',
+      lineHeight: '115%',
+      transition: 'font-size 2s ease'
+      // '@media (max-width:1440px)': { fontSize: '13px' },
+      // '@media (max-width:720px)': { fontSize: '12px' }
+    },
     h1: {
       fontFamily: 'Poppins',
       fontSize: '94px',

@@ -30,7 +30,7 @@ const Form: FC = () => {
             '@media (max-width: 768px) and (min-width: 480px)': {
               maxHeight: '554px',
               position: 'absolute',
-              bottom: '-80px',
+              bottom: '-60px',
               left: '-140px'
             },
             '@media (max-width:480px)': { display: 'none' }
