@@ -11,7 +11,6 @@ const Footer: FC = () => {
       sx={{
         maxWidth: '1440px',
         height: 'fit-content',
-        border: '1px solid white',
         m: '0 auto',
         width: '100%',
         padding: '60px 36px',
