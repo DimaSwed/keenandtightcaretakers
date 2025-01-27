@@ -2,7 +2,6 @@
 import { FC } from 'react'
 import { Box, Typography, CardMedia, Stack } from '@mui/material'
 import ContactForm from '../FormBlock/Form'
-import styles from '../FormBlock/Form.module.sass'
 
 const Form: FC = () => {
   return (
