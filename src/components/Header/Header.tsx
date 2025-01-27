@@ -80,6 +80,7 @@ const Header: FC = () => {
                   color: 'text.primary',
                   fontFamily: 'Poppins',
                   textDecoration: 'none',
+                  fontWeight: 500,
                   cursor: 'pointer',
                   transition: 'color 0.2s ease-in-out',
                   '&:hover': {
