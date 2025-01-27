@@ -14,6 +14,7 @@ const ProductsBlock: FC = () => {
 
   return (
     <Box
+      id="products-section"
       sx={{
         display: 'flex',
         justifyContent: 'center',

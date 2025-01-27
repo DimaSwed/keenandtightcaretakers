@@ -6,8 +6,12 @@ import TitleName from '@/common/ui-kit/TittleName'
 const WhyBlock: FC = () => {
   return (
     <Stack
+      id="why-we-section"
       gap={'30px'}
       sx={{
+        maxWidth: '1368px',
+        width: '100%',
+        m: '0 auto',
         padding: '120px 36px',
         '@media (max-width: 1280px)': {
           padding: '120px 40px'

@@ -8,6 +8,7 @@ const Footer: FC = () => {
   const isMobileP = useMediaQuery(theme.breakpoints.down(321))
   return (
     <Stack
+      id="contacts-section"
       sx={{
         maxWidth: '1440px',
         height: 'fit-content',

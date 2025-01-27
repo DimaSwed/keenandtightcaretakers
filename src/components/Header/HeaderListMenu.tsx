@@ -6,12 +6,20 @@ interface HeaderListMenuProps {
 }
 
 const HeaderListMenu: FC<HeaderListMenuProps> = ({ customStyles }) => {
+  const sections = [
+    { name: 'About', id: 'about-section' },
+    { name: 'Products', id: 'products-section' },
+    { name: 'Why We', id: 'why-we-section' },
+    { name: 'Contacts', id: 'contacts-section' }
+  ]
+
   return (
     <>
-      {['About', 'Products', 'Why We', 'Contacts'].map((section) => (
+      {sections.map((section) => (
         <Typography
-          key={section}
-          // variant="body2"
+          key={section.name}
+          component="a" // Используем компонент 'a' для ссылок
+          href={`#${section.id}`} // Указываем href для перехода к нужному блоку
           sx={{
             fontFamily: 'Poppins',
             textTransform: 'uppercase',
@@ -27,7 +35,7 @@ const HeaderListMenu: FC<HeaderListMenuProps> = ({ customStyles }) => {
             ...customStyles
           }}
         >
-          {section}
+          {section.name}
         </Typography>
       ))}
     </>

@@ -10,6 +10,7 @@ const AboutBlock: FC = () => {
 
   return (
     <Box
+      id="about-section"
       sx={{
         display: 'flex',
         justifyContent: 'center',
