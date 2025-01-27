@@ -103,7 +103,7 @@ const Footer: FC = () => {
               rel="noopener noreferrer"
               style={{ textDecoration: 'none', color: 'inherit' }}
             >
-              123 Coffee Lane, Kilimani, {isDesktop ? <br /> : ''} Nairobi {isTablet ? '' : <br />},
+              123 Coffee Lane, Kilimani, {isDesktop ? <br /> : ''} Nairobi, {isTablet ? '' : <br />}
               Kenya P.O. Box {isMobileP ? <br /> : ''}
               45678-00100
             </a>
