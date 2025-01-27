@@ -163,7 +163,7 @@ const TechBlock: FC = () => {
               consistency, and sustainability. From small batches to large-scale production, achieve
               perfect roasts every time.
             </Typography>
-            <a href="#form-section" style={{ textDecoration: 'none' }}>
+            <Box component="a" href="#form-section" sx={{ textDecoration: 'none' }}>
               <BlackButton
                 type="button"
                 variant="contained"
@@ -176,7 +176,7 @@ const TechBlock: FC = () => {
               >
                 {'Connect Us'}
               </BlackButton>
-            </a>
+            </Box>
           </Stack>
         </Box>
       </Box>

@@ -1,7 +1,8 @@
 'use client'
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { Stack } from '@mui/system'
+import TitleName from '@/common/ui-kit/TittleName'
 
 const AboutBlock: FC = () => {
   const theme = useTheme()
@@ -67,18 +68,14 @@ const AboutBlock: FC = () => {
               }
             }}
           >
-            <Typography
-              variant="h3"
+            <TitleName
+              title="About Us"
               sx={{
-                color: 'divider',
-                height: '100%',
                 '@media (max-width: 480px) and (min-width: 320px)': {
                   height: 'auto'
                 }
               }}
-            >
-              About Us
-            </Typography>
+            />
             <Box
               component="img"
               src={isMobileL ? './coffee-production-wide.png' : './coffee-production.png'}
