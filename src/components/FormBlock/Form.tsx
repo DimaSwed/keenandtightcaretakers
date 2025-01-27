@@ -140,15 +140,15 @@ const Form: FC = () => {
                   height: '400px',
                   mt: '100px'
                 },
-                '@media (max-width: 1279px) and (min-width: 992px)': {
+                '@media (max-width: 1279px) and (min-width: 993px)': {
                   height: '340px',
                   mt: '70px'
                 },
-                '@media (max-width: 991px) and (min-width: 768px)': {
+                '@media (max-width: 991px) and (min-width: 769px)': {
                   height: '340px',
                   mt: '70px'
                 },
-                '@media (max-width: 768px) and (min-width: 480px)': {
+                '@media (max-width: 768px) and (min-width: 481px)': {
                   height: '340px'
                 }
               }}

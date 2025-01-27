@@ -1,11 +1,11 @@
 'use client'
-import { Box, Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
+import { Box, Stack, Typography, useMediaQuery } from '@mui/material'
 import React, { FC } from 'react'
 
 const Footer: FC = () => {
-  const theme = useTheme()
-  const isTablet = useMediaQuery(theme.breakpoints.down(768))
-  const isMobileP = useMediaQuery(theme.breakpoints.down(321))
+  const isDesktop = useMediaQuery(`(max-width: 992px) and (min-width: 769px)`)
+  const isTablet = useMediaQuery(`(max-width: 768px)`)
+  const isMobileP = useMediaQuery(`(max-width: 321px)`)
   return (
     <Stack
       id="contacts-section"
@@ -16,16 +16,16 @@ const Footer: FC = () => {
         width: '100%',
         padding: '60px 36px',
         gap: '30px',
-        '@media (max-width: 1280px) and (min-width: 992px)': {
+        '@media (max-width: 1280px) and (min-width: 993px)': {
           padding: '60px 40px'
         },
-        '@media (max-width: 992px) and (min-width: 768px)': {
+        '@media (max-width: 992px) and (min-width: 769px)': {
           padding: '60px 16px'
         },
-        '@media (max-width: 768px) and (min-width: 480px)': {
+        '@media (max-width: 768px) and (min-width: 481px)': {
           padding: '40px 20px'
         },
-        '@media (max-width: 480px) and (min-width: 320px)': {
+        '@media (max-width: 480px) and (min-width: 321px)': {
           padding: '40px 16px',
           height: 'fit-content'
         },
@@ -39,7 +39,7 @@ const Footer: FC = () => {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          '@media (max-width: 480px) and (min-width: 320px)': {
+          '@media (max-width: 480px)': {
             flexDirection: 'column',
             gap: '20px'
           }
@@ -81,17 +81,17 @@ const Footer: FC = () => {
             color="primary.main"
             sx={{
               textAlign: 'end',
-              '@media (max-width: 992px) and (min-width: 768px)': {
-                // maxWidth: '300px',
-                pl: '50px'
+              '@media (max-width: 992px) and (min-width: 769px)': {
+                textAlign: 'start',
+                pl: '150px'
               },
-              '@media (max-width: 768px) and (min-width: 480px)': {
-                maxWidth: '354px'
+              '@media (max-width: 768px) and (min-width: 481px)': {
+                maxWidth: '354px',
+                textAlign: 'start'
               },
-              '@media (max-width: 480px) and (min-width: 320px)': {
+              '@media (max-width: 480px) ': {
                 flexDirection: 'column',
                 gap: '20px',
-
                 maxWidth: '100%',
                 textAlign: 'start'
               }
@@ -103,8 +103,8 @@ const Footer: FC = () => {
               rel="noopener noreferrer"
               style={{ textDecoration: 'none', color: 'inherit' }}
             >
-              123 Coffee Lane, Kilimani, Nairobi, Kenya {isTablet ? '' : <br />} P.O. Box{' '}
-              {isMobileP ? <br /> : ''}
+              123 Coffee Lane, Kilimani, {isDesktop ? <br /> : ''} Nairobi {isTablet ? '' : <br />},
+              Kenya P.O. Box {isMobileP ? <br /> : ''}
               45678-00100
             </a>
           </Typography>
@@ -121,16 +121,16 @@ const Footer: FC = () => {
           textAlign: 'center',
           color: 'primary.light',
           textTransform: 'uppercase',
-          '@media (max-width: 1280px) and (min-width: 992px)': {
+          '@media (max-width: 1280px) and (min-width: 993px)': {
             fontSize: '154px'
           },
-          '@media (max-width: 992px) and (min-width: 768px)': {
+          '@media (max-width: 992px) and (min-width: 769px)': {
             fontSize: '124px'
           },
-          '@media (max-width: 768px) and (min-width: 480px)': {
+          '@media (max-width: 768px) and (min-width: 481px)': {
             fontSize: '94px'
           },
-          '@media (max-width: 480px) and (min-width: 320px)': {
+          '@media (max-width: 480px) and (min-width: 321px)': {
             fontSize: '63px'
           },
           '@media (max-width: 320px)': {
@@ -146,16 +146,30 @@ const Footer: FC = () => {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          '@media (max-width: 480px) and (min-width: 320px)': {
+          '@media (max-width: 480px)': {
             flexDirection: 'column',
             gap: '20px'
           }
         }}
       >
-        <Typography variant="body2" color="divider" sx={{ fontSize: { sm: '18px', xs: '16px' } }}>
+        <Typography
+          variant="body2"
+          color="divider"
+          sx={{ flex: '1 1 50%', fontSize: { sm: '18px', xs: '16px' } }}
+        >
           © 2024 KEEN AND TIGHT CARETAKERS
         </Typography>
-        <Typography variant="body2" color="divider" sx={{ fontSize: { sm: '18px', xs: '16px' } }}>
+        <Typography
+          variant="body2"
+          color="divider"
+          sx={{
+            flex: '1 1 18%',
+            fontSize: { sm: '18px', xs: '16px' },
+            '@media (max-width: 768px) and (min-width: 481px)': {
+              flex: '1 1 47%'
+            }
+          }}
+        >
           UIC/PIC 205756758
         </Typography>
       </Box>

@@ -19,9 +19,12 @@ const PartnersBrandsSwiper: FC = () => {
         width: '100%',
         mb: '120px',
         display: { sm: 'block', xs: 'none' },
-        '@media (max-width: 768px) and (min-width: 480px)': {
+        '@media (max-width: 768px) and (min-width: 481px)': {
           mb: '74px',
           maxHeight: '80px'
+        },
+        '@media (max-width: 480px)': {
+          display: 'none'
         }
       }}
     >

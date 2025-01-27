@@ -19,16 +19,16 @@ const AboutBlock: FC = () => {
         width: '100%',
         padding: '120px 0px',
         m: '0 auto',
-        '@media (max-width: 1280px) and (min-width: 992px)': {
+        '@media (max-width: 1280px) and (min-width: 993px)': {
           padding: '120px 40px'
         },
-        '@media (max-width: 992px) and (min-width: 768px)': {
+        '@media (max-width: 992px) and (min-width: 769px)': {
           padding: '120px 16px'
         },
-        '@media (max-width: 768px) and (min-width: 480px)': {
+        '@media (max-width: 768px) and (min-width: 481px)': {
           padding: '80px 20px'
         },
-        '@media (max-width: 480px) and (min-width: 320px)': {
+        '@media (max-width: 480px) and (min-width: 321px)': {
           padding: '60px 16px',
           height: 'fit-content'
         },
@@ -42,7 +42,7 @@ const AboutBlock: FC = () => {
         <Box
           sx={{
             display: 'flex',
-            '@media (max-width: 480px) and (min-width: 320px)': {
+            '@media (max-width: 480px) and (min-width: 321px)': {
               flexDirection: 'column'
             }
           }}
@@ -54,13 +54,13 @@ const AboutBlock: FC = () => {
               alignItems: 'center',
               justifyContent: 'space-between',
               pr: '98px',
-              '@media (max-width: 992px) and (min-width: 768px)': {
+              '@media (max-width: 992px) and (min-width: 769px)': {
                 pr: '18px'
               },
-              '@media (max-width: 768px) and (min-width: 480px)': {
+              '@media (max-width: 768px) and (min-width: 481px)': {
                 pr: '20px'
               },
-              '@media (max-width: 480px) and (min-width: 320px)': {
+              '@media (max-width: 480px) and (min-width: 321px)': {
                 pr: '0px',
                 flexDirection: 'column',
                 gap: '20px',
@@ -72,7 +72,7 @@ const AboutBlock: FC = () => {
             <TitleName
               title="About Us"
               sx={{
-                '@media (max-width: 480px) and (min-width: 320px)': {
+                '@media (max-width: 480px) and (min-width: 321px)': {
                   height: 'auto'
                 }
               }}
@@ -84,11 +84,11 @@ const AboutBlock: FC = () => {
                 maxWidth: '170px',
                 height: 'auto',
                 width: '100%',
-                '@media (max-width: 768px) and (min-width: 480px)': {
+                '@media (max-width: 768px) and (min-width: 481px)': {
                   width: '162px',
                   height: '189px'
                 },
-                '@media (max-width: 480px) and (min-width: 320px)': {
+                '@media (max-width: 480px) and (min-width: 321px)': {
                   maxWidth: '448px',
                   height: '180px'
                 }
@@ -103,7 +103,7 @@ const AboutBlock: FC = () => {
                 textTransform: 'uppercase',
                 maxWidth: '684px',
                 '@media (max-width:992px)': { fontSize: '48px' },
-                '@media (max-width:768px)': { fontSize: '36px' },
+                '@media (max-width:768px)': { fontSize: '36px', mt: '50px' },
                 '@media (max-width:480px)': { fontSize: '28px' }
               }}
             >
@@ -135,20 +135,20 @@ const AboutBlock: FC = () => {
               width: '684px',
               height: '115px',
               alignSelf: 'flex-end',
-              '@media (max-width: 1280px) and (min-width: 992px)': {
+              '@media (max-width: 1280px) and (min-width: 993px)': {
                 width: '600px',
                 height: '138px'
               },
-              '@media (max-width: 992px) and (min-width: 768px)': {
+              '@media (max-width: 992px) and (min-width: 769px)': {
                 width: '480px',
                 height: '161px'
               },
-              '@media (max-width: 768px) and (min-width: 480px)': {
+              '@media (max-width: 768px) and (min-width: 481px)': {
                 maxWidth: '728px',
                 width: '100%',
                 height: 'auto'
               },
-              '@media (max-width: 480px) and (min-width: 320px)': {
+              '@media (max-width: 480px) and (min-width: 321px)': {
                 height: '100%'
               }
             }}

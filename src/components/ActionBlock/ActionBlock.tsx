@@ -39,16 +39,16 @@ const ActionBlock: FC = () => {
           flexDirection: 'column',
           alignItems: 'center',
           gap: '30px',
-          '@media (max-width: 1280px) and (min-width: 992px)': {
+          '@media (max-width: 1280px) and (min-width: 993px)': {
             padding: '80px 107px'
           },
-          '@media (max-width: 992px) and (min-width: 768px)': {
+          '@media (max-width: 992px) and (min-width: 769px)': {
             padding: '133px 72px'
           },
-          '@media (max-width: 768px) and (min-width: 480px)': {
+          '@media (max-width: 768px) and (min-width: 481px)': {
             padding: '112px 10px'
           },
-          '@media (max-width: 480px) and (min-width: 320px)': {
+          '@media (max-width: 480px) and (min-width: 321px)': {
             padding: '58px 10px',
             gap: '20px'
           },
@@ -68,18 +68,18 @@ const ActionBlock: FC = () => {
               maxWidth: '1167px',
               width: '100%',
 
-              '@media (max-width: 1280px) and (min-width: 992px)': {
+              '@media (max-width: 1280px) and (min-width: 993px)': {
                 maxWidth: '990px',
                 fontSize: '68px'
               },
-              '@media (max-width: 992px) and (min-width: 768px)': {
+              '@media (max-width: 992px) and (min-width: 769px)': {
                 maxWidth: '815px',
                 fontSize: '74px'
               },
-              '@media (max-width: 768px) and (min-width: 480px)': {
+              '@media (max-width: 768px) and (min-width: 481px)': {
                 fontSize: '68px'
               },
-              '@media (max-width: 480px) and (min-width: 320px)': {
+              '@media (max-width: 480px) and (min-width: 321px)': {
                 fontSize: '36px'
               },
               '@media (max-width: 320px) ': {
@@ -99,7 +99,7 @@ const ActionBlock: FC = () => {
               fontWeight: '500',
               textAlign: 'center',
               color: 'primary.light',
-              '@media (max-width: 768px) and (min-width: 320px)': {
+              '@media (max-width: 768px) and (min-width: 321px)': {
                 fontSize: '22px'
               },
               '@media (max-width: 320px) ': {

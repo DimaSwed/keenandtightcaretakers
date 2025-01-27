@@ -18,19 +18,19 @@ const ClientBlock: FC = () => {
         padding: '120px 0px',
         gap: '122px',
         m: '0 auto',
-        '@media (max-width: 1280px) and (min-width: 992px)': {
+        '@media (max-width: 1280px) and (min-width: 993px)': {
           padding: '120px 40px',
           gap: '106px'
         },
-        '@media (max-width: 992px) and (min-width: 768px)': {
+        '@media (max-width: 992px) and (min-width: 769px)': {
           padding: '120px 16px'
         },
-        '@media (max-width: 768px) and (min-width: 480px)': {
+        '@media (max-width: 768px) and (min-width: 481px)': {
           padding: '80px 20px',
           flexDirection: 'column',
           gap: '40px'
         },
-        '@media (max-width: 480px) and (min-width: 320px)': {
+        '@media (max-width: 480px) and (min-width: 321px)': {
           padding: '60px 16px',
           flexDirection: 'column',
           gap: '40px',

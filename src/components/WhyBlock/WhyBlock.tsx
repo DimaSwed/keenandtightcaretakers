@@ -48,7 +48,7 @@ const WhyBlock: FC = () => {
             flex: '1 1 13%',
             alignItems: 'center',
             justifyContent: 'space-between',
-            '@media (max-width: 992px) and (min-width: 768px)': {
+            '@media (max-width: 992px) and (min-width: 769px)': {
               flex: '1 1 10%'
             }
           }}
@@ -106,7 +106,6 @@ const WhyBlock: FC = () => {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-
           '@media (max-width:768px)': { flexDirection: 'column', gap: '30px' }
         }}
       >

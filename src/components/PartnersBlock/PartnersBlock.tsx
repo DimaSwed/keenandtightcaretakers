@@ -20,7 +20,7 @@ const PartnersBlock: FC = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            '@media (max-width: 1280px) and (min-width: 768px)': {
+            '@media (max-width: 1280px) and (min-width: 769px)': {
               pt: '120px',
               pb: '60px'
             },
@@ -28,6 +28,9 @@ const PartnersBlock: FC = () => {
               pt: '80px',
               pb: '60px',
               px: '20px'
+            },
+            '@media (max-width: 480px)': {
+              display: 'none'
             }
           }}
         >
@@ -37,7 +40,7 @@ const PartnersBlock: FC = () => {
               fontWeight: '400',
               color: 'background.paper',
               width: '100%',
-              '@media (max-width: 1280px) and (min-width: 992px)': {
+              '@media (max-width: 1280px) and (min-width: 993px)': {
                 maxWidth: '1100px'
               },
               '@media (max-width: 768px)': {

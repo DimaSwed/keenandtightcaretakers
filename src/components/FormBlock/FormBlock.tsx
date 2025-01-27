@@ -6,7 +6,31 @@ import styles from '../FormBlock/Form.module.sass'
 
 const Form: FC = () => {
   return (
-    <div className={styles.formContainer} id="form-section">
+    <Box
+      sx={{
+        position: 'relative',
+        margin: '0 auto',
+        maxWidth: '1440px',
+        width: '100%',
+        padding: '92px 36px 0px 0px',
+        '@media (max-width: 1280px) and (min-width: 993px)': {
+          padding: '92px 40px 0px 0px'
+        },
+        '@media (max-width: 992px) and (min-width: 769px)': {
+          padding: '80px 16px 80px 20px'
+        },
+        '@media (max-width: 768px) and (min-width: 481px)': {
+          padding: '60px 16px 60px 16px'
+        },
+        '@media (max-width: 480px) and (min-width: 321px)': {
+          padding: '60px 16px'
+        },
+        '@media (max-width: 320px)': {
+          padding: '60px 10px'
+        }
+      }}
+      id="form-section"
+    >
       <Box
         sx={{
           display: 'flex',
@@ -24,10 +48,10 @@ const Form: FC = () => {
               marginLeft: '0px',
               marginBottom: '0px',
               position: 'absolute',
-              bottom: '-60px',
+              bottom: '-80px',
               left: '-190px'
             },
-            '@media (max-width: 768px) and (min-width: 480px)': {
+            '@media (max-width: 768px) and (min-width: 481px)': {
               maxHeight: '554px',
               position: 'absolute',
               bottom: '-60px',
@@ -41,12 +65,11 @@ const Form: FC = () => {
             image="/red-combine.png"
             sx={{
               objectFit: 'cover',
-
               maxHeight: { lg: 'auto', md: '791px', sm: '448px', xs: '300px' },
               '@media (max-width: 992px) and (min-width: 769px)': {
                 maxHeight: '700px'
               },
-              '@media (max-width: 768px) and (min-width: 480px)': {
+              '@media (max-width: 768px) and (min-width: 481px)': {
                 maxHeight: '450px'
               }
             }}
@@ -61,7 +84,7 @@ const Form: FC = () => {
               marginLeft: '290px',
               mb: '-50px'
             },
-            '@media (max-width: 768px) and (min-width: 480px)': {
+            '@media (max-width: 768px) and (min-width: 481px)': {
               maxWidth: '728px'
             },
             width: '100%'
@@ -85,10 +108,10 @@ const Form: FC = () => {
                 '@media (max-width: 992px) and (min-width: 769px)': {
                   marginRight: '70px'
                 },
-                '@media (max-width: 768px) and (min-width: 480px)': {
+                '@media (max-width: 768px) and (min-width: 481px)': {
                   alignSelf: 'center'
                 },
-                '@media (max-width: 479px) and (min-width: 320px)': {
+                '@media (max-width: 479px) and (min-width: 321px)': {
                   marginRight: '30px'
                 },
                 '@media (max-width: 320px) ': {
@@ -129,7 +152,7 @@ const Form: FC = () => {
           <ContactForm />
         </Stack>
       </Box>
-    </div>
+    </Box>
   )
 }
 

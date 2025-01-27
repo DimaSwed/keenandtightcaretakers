@@ -23,16 +23,16 @@ const ProductsBlock: FC = () => {
         width: '100%',
         padding: '120px 0px',
         m: '0 auto',
-        '@media (max-width: 1280px) and (min-width: 992px)': {
+        '@media (max-width: 1280px) and (min-width: 993px)': {
           padding: '120px 40px'
         },
-        '@media (max-width: 992px) and (min-width: 768px)': {
+        '@media (max-width: 992px) and (min-width: 769px)': {
           padding: '158px 16px'
         },
-        '@media (max-width: 768px) and (min-width: 480px)': {
+        '@media (max-width: 768px) and (min-width: 481px)': {
           padding: '80px 20px'
         },
-        '@media (max-width: 480px) and (min-width: 320px)': {
+        '@media (max-width: 480px) and (min-width: 321px)': {
           padding: '60px 16px',
           height: 'fit-content'
         },
@@ -66,7 +66,7 @@ const ProductsBlock: FC = () => {
               // flex: '1 1 50%',
               alignItems: 'center',
               justifyContent: 'space-between',
-              '@media (max-width: 992px) and (min-width: 768px)': {
+              '@media (max-width: 992px) and (min-width: 769px)': {
                 maxWidth: '300px'
               },
               '@media (max-width: 768px)': {
@@ -84,7 +84,7 @@ const ProductsBlock: FC = () => {
             <TitleName
               title="Products"
               sx={{
-                '@media (max-width: 480px) and (min-width: 320px)': {
+                '@media (max-width: 480px) and (min-width: 321px)': {
                   height: 'auto'
                 }
               }}

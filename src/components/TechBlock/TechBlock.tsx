@@ -35,21 +35,24 @@ const TechBlock: FC = () => {
           padding: '60px 20px',
           backgroundColor: 'background.paper',
           m: '0 auto',
-          height: `calc(100vh - 85px)`,
+          // height: `calc(100vh - 85px)`,
+          height: '808px',
           display: 'flex',
           flexDirection: 'column',
           gap: '60px',
 
-          '@media (max-width: 992px) and (min-width: 768px)': {
+          '@media (max-width: 992px) and (min-width: 769px)': {
             padding: '20px 12px'
           },
-          '@media (max-width: 768px) and (min-width: 480px)': {
+          '@media (max-width: 768px) and (min-width: 481px)': {
             padding: '30px 10px',
             justifyContent: 'space-between',
             height: '808px'
           },
-          '@media (max-width: 480px) and (min-width: 320px)': {
-            height: '708px'
+          '@media (max-width: 480px) and (min-width: 321px)': {
+            height: 'fit-content',
+            padding: '30px 8px',
+            gap: '0px'
           },
           '@media (max-width: 320px) ': {
             padding: '20px 10px',
@@ -75,7 +78,14 @@ const TechBlock: FC = () => {
               color: 'primary.light',
               textAlign: 'end',
               mr: '50px',
-              '@media (max-width:480px)': { textAlign: 'start', mr: '0px' }
+              '@media (max-width:480px)': {
+                textAlign: 'start',
+                mr: '0px'
+                // maxWidth: '424px',
+                // width: '100%'
+                // width: 'auto',
+                // textWrap: 'nowrap'
+              }
             }}
           >
             Coffee Excellence
@@ -101,17 +111,17 @@ const TechBlock: FC = () => {
                 maxWidth: '872px',
                 width: '100%',
                 height: '627px',
-                '@media (max-width: 1280px) and (min-width: 992px)': {
+                '@media (max-width: 1280px) and (min-width: 993px)': {
                   maxWidth: '760px',
                   height: '546px',
                   bottom: '-105px'
                 },
-                '@media (max-width: 992px) and (min-width: 768px)': {
+                '@media (max-width: 992px) and (min-width: 769px)': {
                   maxWidth: '610px',
                   height: '438px',
                   bottom: '-70px'
                 },
-                '@media (max-width: 768px) and (min-width: 480px)': {
+                '@media (max-width: 768px) and (min-width: 481px)': {
                   maxWidth: '617px',
                   height: '443px',
                   left: '5%',
@@ -121,7 +131,11 @@ const TechBlock: FC = () => {
                 '@media (max-width: 480px)': {
                   maxWidth: '447px',
                   height: '321px',
-                  bottom: '0'
+                  bottom: '0px',
+                  pr: '0px',
+                  left: '0px',
+                  mt: '-40px',
+                  position: 'relative'
                 },
                 '@media (max-width: 320px)': {
                   maxWidth: '300px',
@@ -136,7 +150,8 @@ const TechBlock: FC = () => {
             gap="30px"
             sx={{
               '@media (max-width: 480px)': {
-                gap: '20px'
+                gap: '20px',
+                alignSelf: 'flex-end'
               }
             }}
           >
@@ -147,10 +162,10 @@ const TechBlock: FC = () => {
                 width: '100%',
                 fontWeight: '500',
                 color: 'primary.light',
-                '@media (max-width: 1280px) and (min-width: 992px)': {
+                '@media (max-width: 1280px) and (min-width: 993px)': {
                   maxWidth: '520px'
                 },
-                '@media (max-width: 992px) and (min-width: 768px)': {
+                '@media (max-width: 992px) and (min-width: 769px)': {
                   maxWidth: '500px'
                 },
                 '@media (max-width: 768px)': {
