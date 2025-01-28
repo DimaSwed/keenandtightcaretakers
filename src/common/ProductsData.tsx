@@ -66,7 +66,7 @@ export const productsData: IProductsData[] = [
   {
     id: '08',
     title: 'Cimbria',
-    country: 'USA Denmark',
+    country: 'USA, Denmark',
     description:
       'Experts in grain processing, offering sorting and transportation equipment specifically for coffee.',
     image: './products/cimbria-img8.png'
