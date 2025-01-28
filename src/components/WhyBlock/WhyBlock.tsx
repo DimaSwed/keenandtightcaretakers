@@ -1,9 +1,11 @@
 'use client'
 import { FC } from 'react'
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Stack, Typography, useMediaQuery } from '@mui/material'
 import TitleName from '@/common/ui-kit/TittleName'
 
 const WhyBlock: FC = () => {
+  const isMobileL = useMediaQuery(`(max-width: 320px)`)
+
   return (
     <Stack
       id="why-we-section"
@@ -91,7 +93,7 @@ const WhyBlock: FC = () => {
           maxWidth: '1368px',
           width: '100%',
           borderRadius: '20px',
-          backgroundImage: 'url("./why-bg.png")',
+          backgroundImage: isMobileL ? 'url("./why-bgM.png")' : 'url("./why-bg.png")',
           height: '590px',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -99,6 +101,10 @@ const WhyBlock: FC = () => {
           '@media (max-width:992px)': { height: '400px' },
           '@media (max-width: 480px)': {
             height: '260px'
+          },
+          '@media (max-width: 320px)': {
+            height: '200px',
+            backgroundPosition: '60% center'
           }
         }}
       />
