@@ -57,7 +57,7 @@ const TechBlock: FC = () => {
           '@media (max-width: 320px) ': {
             padding: '20px 10px',
             justifyContent: 'space-between',
-            height: '635px'
+            maxHeight: 'fit-content'
           }
         }}
       >
