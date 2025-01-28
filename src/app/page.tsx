@@ -36,7 +36,12 @@ export default function Home() {
       <WhyBlock />
       <ClientBlock />
       <PartnersBlock />
-      <Box sx={{ backgroundColor: 'background.paper' }}>
+      <Box
+        sx={{
+          backgroundColor: 'background.paper',
+          position: 'relative'
+        }}
+      >
         <Form />
       </Box>
       <Box sx={{ backgroundColor: 'text.primary' }}>

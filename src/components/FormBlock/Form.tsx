@@ -150,6 +150,9 @@ const Form: FC = () => {
                 },
                 '@media (max-width: 768px) and (min-width: 481px)': {
                   height: '340px'
+                },
+                '@media (max-width: 480px)': {
+                  height: '467px'
                 }
               }}
             >
