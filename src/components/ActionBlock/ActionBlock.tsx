@@ -135,6 +135,9 @@ const ActionBlock: FC = () => {
               fontWeight: 400,
               padding: { md: '16px 71.5px', sm: 0, xs: '16px 54px' },
               margin: '0 auto',
+              '@media (max-width: 411px) and (min-width: 321px) ': {
+                minHeight: '110px'
+              },
               '@media (max-width: 320px) ': {
                 height: '110px'
               }
