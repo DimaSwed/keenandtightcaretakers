@@ -41,7 +41,7 @@ const AboutBlock: FC = () => {
         <Box
           sx={{
             display: 'flex',
-            '@media (max-width: 480px) and (min-width: 321px)': {
+            '@media (max-width: 480px)': {
               flexDirection: 'column'
             }
           }}
@@ -59,7 +59,7 @@ const AboutBlock: FC = () => {
               '@media (max-width: 768px) and (min-width: 481px)': {
                 pr: '20px'
               },
-              '@media (max-width: 480px) and (min-width: 321px)': {
+              '@media (max-width: 480px)': {
                 pr: '0px',
                 flexDirection: 'column',
                 gap: '20px',
@@ -71,7 +71,7 @@ const AboutBlock: FC = () => {
             <TitleName
               title="About Us"
               sx={{
-                '@media (max-width: 480px) and (min-width: 321px)': {
+                '@media (max-width: 480px)': {
                   height: 'auto'
                 }
               }}
@@ -87,7 +87,7 @@ const AboutBlock: FC = () => {
                   width: '162px',
                   height: '189px'
                 },
-                '@media (max-width: 480px) and (min-width: 321px)': {
+                '@media (max-width: 480px)': {
                   maxWidth: '448px',
                   height: '180px'
                 }
@@ -103,7 +103,8 @@ const AboutBlock: FC = () => {
                 maxWidth: '684px',
                 '@media (max-width:992px)': { fontSize: '48px' },
                 '@media (max-width:768px)': { fontSize: '36px', mt: '50px' },
-                '@media (max-width:480px)': { fontSize: '28px' }
+                '@media (max-width:480px)': { fontSize: '28px' },
+                '@media (max-width:320px)': { mt: '0px' }
               }}
             >
               Empowering coffee producers worldwide with cutting-edge technology that delivers
@@ -147,7 +148,7 @@ const AboutBlock: FC = () => {
                 width: '100%',
                 height: 'auto'
               },
-              '@media (max-width: 480px) and (min-width: 321px)': {
+              '@media (max-width: 480px)': {
                 height: '100%'
               }
             }}
