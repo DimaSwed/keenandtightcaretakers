@@ -11,7 +11,8 @@ const PartnersBrandsSwiper: FC = () => {
     '/logos/logo3.png',
     '/logos/logo4.png',
     '/logos/logo5.png',
-    '/logos/logo6.png'
+    '/logos/logo6.png',
+    '/logos/logo7.png'
   ]
   return (
     <Box

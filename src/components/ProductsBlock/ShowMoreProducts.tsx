@@ -84,8 +84,10 @@ const ShowMoreProducts: FC<ShowMoreProps> = ({
 
       <ShowMoreButton
         sx={{
+          height: isExpanded ? '290px' : 'auto',
           '@media (max-width:480px)': {
-            width: '100%'
+            width: '100%',
+            height: 'auto'
           }
         }}
       >
@@ -190,7 +192,8 @@ const ShowMoreProducts: FC<ShowMoreProps> = ({
               src={image}
               sx={{
                 '@media (max-width: 480px)': {
-                  display: 'none'
+                  display: 'none',
+                  maxHeight: '250px'
                 }
               }}
             />

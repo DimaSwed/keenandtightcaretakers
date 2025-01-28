@@ -4,8 +4,8 @@ import React, { FC } from 'react'
 
 const Footer: FC = () => {
   const isDesktop = useMediaQuery(`(max-width: 992px) and (min-width: 769px)`)
-  const isTablet = useMediaQuery(`(max-width: 768px)`)
-  const isMobileP = useMediaQuery(`(max-width: 321px)`)
+  const isTablet = useMediaQuery(`(max-width: 768px) and (min-width: 481px)`)
+  const isMobileP = useMediaQuery(`(max-width: 320px)`)
   return (
     <Stack
       id="contacts-section"
@@ -67,7 +67,7 @@ const Footer: FC = () => {
           </Typography>
           <Typography variant="subtitle2" color="primary.main">
             <a href="tel:+359881234567" style={{ textDecoration: 'none', color: 'inherit' }}>
-              +359 88 123 4567
+              +254 20 123 4567
             </a>
           </Typography>
         </Box>
@@ -80,20 +80,30 @@ const Footer: FC = () => {
             variant="subtitle2"
             color="primary.main"
             sx={{
-              textAlign: 'end',
+              textAlign: 'start',
+              maxWidth: '416px',
+              alignSelf: 'flex-end',
+              ml: '270px',
+              '@media (max-width: 1280px) and (min-width: 993px)': {
+                ml: '230px'
+              },
               '@media (max-width: 992px) and (min-width: 769px)': {
-                textAlign: 'start',
-                pl: '150px'
+                maxWidth: '300px',
+                ml: '160px'
+                // textAlign: 'start',
+                // pl: '150px'
               },
               '@media (max-width: 768px) and (min-width: 481px)': {
                 maxWidth: '354px',
-                textAlign: 'start'
+                ml: '0px'
+                // textAlign: 'start'
               },
               '@media (max-width: 480px) ': {
                 flexDirection: 'column',
                 gap: '20px',
                 maxWidth: '100%',
-                textAlign: 'start'
+                width: '100%',
+                ml: '0px'
               }
             }}
           >
@@ -103,8 +113,8 @@ const Footer: FC = () => {
               rel="noopener noreferrer"
               style={{ textDecoration: 'none', color: 'inherit' }}
             >
-              123 Coffee Lane, Kilimani, {isDesktop ? <br /> : ''} Nairobi, {isTablet ? '' : <br />}
-              Kenya P.O. Box {isMobileP ? <br /> : ''}
+              123 Coffee Lane, Kilimani, {isDesktop ? <br /> : ''} Nairobi, {isTablet ? <br /> : ''}
+              Kenya {isDesktop ? <br /> : ''} P.O. Box {isMobileP ? <br /> : ''}
               45678-00100
             </a>
           </Typography>

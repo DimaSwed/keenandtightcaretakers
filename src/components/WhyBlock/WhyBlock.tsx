@@ -126,7 +126,14 @@ const WhyBlock: FC = () => {
           <Typography variant="h4" sx={{ color: 'background.paper', fontWeight: '500' }}>
             {'// 1'}
           </Typography>
-          <Typography variant="h3" sx={{ textTransform: 'uppercase', color: 'text.primary' }}>
+          <Typography
+            variant="h3"
+            sx={{
+              textTransform: 'uppercase',
+              color: 'text.primary',
+              '@media (max-width:320px)': { maxWidth: '299px' }
+            }}
+          >
             Innovative Technology for Maximum Efficiency
           </Typography>
           <Typography variant="body2" sx={{ color: 'divider' }}>

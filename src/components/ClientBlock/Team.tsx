@@ -64,15 +64,13 @@ const Team: FC<ITeamProps> = ({ isExpanded }) => {
             <Typography
               variant="body1"
               sx={{
-                '@media (max-width: 992px)': {
-                  fontWeight: '500'
-                }
+                fontWeight: '500'
               }}
             >
               We partnered with this company to upgrade our roasting equipment, and the difference
-              has been remarkable. The new system has not only improved the consistency of our
-              coffee roasts but also allowed us to increase production without sacrificing quality.
-              Their team was incredibly supportive, guiding us through the installation and training
+              has been remarkable. The new system not only improved the consistency of our coffee
+              roasts but also allowed us to increase production without sacrificing quality. Their
+              team was incredibly supportive, guiding us through the installation and training
               process. Now, our coffee beans deliver a flavor profile that our customers rave about,
               and our operations are running more efficiently than ever.
             </Typography>
@@ -122,9 +120,7 @@ const Team: FC<ITeamProps> = ({ isExpanded }) => {
             <Typography
               variant="body1"
               sx={{
-                '@media (max-width: 992px)': {
-                  fontWeight: '500'
-                }
+                fontWeight: '500'
               }}
             >
               From the initial consultation to installation, their team demonstrated an exceptional
@@ -181,9 +177,7 @@ const Team: FC<ITeamProps> = ({ isExpanded }) => {
               <Typography
                 variant="body1"
                 sx={{
-                  '@media (max-width: 992px)': {
-                    fontWeight: '500'
-                  }
+                  fontWeight: '500'
                 }}
               >
                 Maintaining the unique flavor profile of Tanzanian coffee is our top priority, and
@@ -241,9 +235,7 @@ const Team: FC<ITeamProps> = ({ isExpanded }) => {
             <Typography
               variant="body1"
               sx={{
-                '@media (max-width: 992px)': {
-                  fontWeight: '500'
-                }
+                fontWeight: '500'
               }}
             >
               In Ethiopia, coffee is not just a product; it’s part of our identity. We needed
@@ -299,9 +291,7 @@ const Team: FC<ITeamProps> = ({ isExpanded }) => {
             <Typography
               variant="body1"
               sx={{
-                '@media (max-width: 992px)': {
-                  fontWeight: '500'
-                }
+                fontWeight: '500'
               }}
             >
               As a leading coffee supplier in the Middle East, efficiency and quality are critical
@@ -359,9 +349,7 @@ const Team: FC<ITeamProps> = ({ isExpanded }) => {
               <Typography
                 variant="body1"
                 sx={{
-                  '@media (max-width: 992px)': {
-                    fontWeight: '500'
-                  }
+                  fontWeight: '500'
                 }}
               >
                 Our partnership with this company has elevated our production capabilities to a
@@ -428,9 +416,7 @@ const Team: FC<ITeamProps> = ({ isExpanded }) => {
             <Typography
               variant="body1"
               sx={{
-                '@media (max-width: 992px)': {
-                  fontWeight: '500'
-                }
+                fontWeight: '500'
               }}
             >
               Maintaining the unique flavor profile of Tanzanian coffee is our top priority, and
@@ -484,9 +470,7 @@ const Team: FC<ITeamProps> = ({ isExpanded }) => {
             <Typography
               variant="body1"
               sx={{
-                '@media (max-width: 992px)': {
-                  fontWeight: '500'
-                }
+                fontWeight: '500'
               }}
             >
               Our partnership with this company has elevated our production capabilities to a whole
