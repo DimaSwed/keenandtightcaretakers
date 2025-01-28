@@ -78,6 +78,9 @@ const TechBlock: FC = () => {
               color: 'primary.light',
               textAlign: 'end',
               mr: '50px',
+              '@media (max-width:768px) and (min-width:481px)': {
+                width: '100%'
+              },
               '@media (max-width:480px)': {
                 textAlign: 'start',
                 mr: '0px'

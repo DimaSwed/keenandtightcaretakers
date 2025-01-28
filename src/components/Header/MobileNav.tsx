@@ -47,7 +47,7 @@ export const MobileNav: FC<IWindowProps> = ({ window }) => {
             ':hover': {
               color: '#da4e28',
               '& svg': {
-                fill: '#da4e28' // Использует текущий цвет текста
+                fill: '#da4e28'
               }
             }
           }}
@@ -97,9 +97,9 @@ export const MobileNav: FC<IWindowProps> = ({ window }) => {
           }}
         >
           <HeaderListMenu
+            onClick={closeNavHandler}
             customStyles={{
               fontFamily: 'Roboto',
-              fontSize: '38px',
               fontWeight: '500',
               textAlign: 'center',
               color: 'divider'
@@ -117,7 +117,15 @@ export const MobileNav: FC<IWindowProps> = ({ window }) => {
               lineHeight: '110%',
               textDecoration: 'none',
               cursor: 'pointer',
-              '@media (max-width:320px)': { fontSize: '32px' }
+              '@media (max-width:768px)': {
+                fontSize: '38px'
+              },
+              '@media (max-width:480px)': {
+                fontSize: '42px'
+              },
+              '@media (max-width:320px)': {
+                fontSize: '34px'
+              }
             }}
           >
             +254 20 123 4567

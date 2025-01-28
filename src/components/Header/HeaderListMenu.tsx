@@ -3,9 +3,10 @@ import { Typography } from '@mui/material'
 
 interface HeaderListMenuProps {
   customStyles?: React.CSSProperties
+  onClick?: () => void
 }
 
-const HeaderListMenu: FC<HeaderListMenuProps> = ({ customStyles }) => {
+const HeaderListMenu: FC<HeaderListMenuProps> = ({ customStyles, onClick }) => {
   const sections = [
     { name: 'About', id: 'about-section' },
     { name: 'Products', id: 'products-section' },
@@ -18,8 +19,9 @@ const HeaderListMenu: FC<HeaderListMenuProps> = ({ customStyles }) => {
       {sections.map((section) => (
         <Typography
           key={section.name}
-          component="a" // Используем компонент 'a' для ссылок
-          href={`#${section.id}`} // Указываем href для перехода к нужному блоку
+          component="a"
+          onClick={onClick}
+          href={`#${section.id}`}
           sx={{
             fontFamily: 'Poppins',
             textTransform: 'uppercase',
@@ -31,6 +33,15 @@ const HeaderListMenu: FC<HeaderListMenuProps> = ({ customStyles }) => {
             transition: 'color 0.2s ease-in-out',
             '&:hover': {
               color: 'background.paper'
+            },
+            '@media (max-width:768px)': {
+              fontSize: '38px'
+            },
+            '@media (max-width:480px)': {
+              fontSize: '42px'
+            },
+            '@media (max-width:320px)': {
+              fontSize: '34px'
             },
             ...customStyles
           }}
