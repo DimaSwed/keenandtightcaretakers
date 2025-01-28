@@ -1,9 +1,11 @@
 'use client'
 import { FC } from 'react'
-import { Box, Typography, CardMedia, Stack } from '@mui/material'
+import { Box, Typography, CardMedia, Stack, useMediaQuery } from '@mui/material'
 import ContactForm from '../FormBlock/Form'
 
 const Form: FC = () => {
+  const isMobileL = useMediaQuery(`(max-width: 480px)`)
+
   return (
     <Box
       sx={{
@@ -119,7 +121,7 @@ const Form: FC = () => {
                 }
               }}
             >
-              Let’s Start a
+              Let’s Start {isMobileL ? '' : 'a'}
             </Typography>
             <Typography
               variant="h2"
@@ -131,7 +133,7 @@ const Form: FC = () => {
                 alignSelf: 'flex-start'
               }}
             >
-              Conversation
+              {isMobileL ? 'a' : ''} Conversation
             </Typography>
           </Box>
           <Box mb="40px" alignSelf="flex-end">

@@ -1,12 +1,11 @@
 'use client'
 import { FC } from 'react'
-import { Box, Typography, useMediaQuery, useTheme } from '@mui/material'
+import { Box, Typography, useMediaQuery } from '@mui/material'
 import { Stack } from '@mui/system'
 import TitleName from '@/common/ui-kit/TittleName'
 
 const AboutBlock: FC = () => {
-  const theme = useTheme()
-  const isMobileL = useMediaQuery(theme.breakpoints.down('sm'))
+  const isMobileL = useMediaQuery(`(max-width: 480px)`)
 
   return (
     <Box
