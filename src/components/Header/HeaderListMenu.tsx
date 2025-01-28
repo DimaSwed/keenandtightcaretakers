@@ -38,7 +38,7 @@ const HeaderListMenu: FC<HeaderListMenuProps> = ({ customStyles, onClick }) => {
               fontSize: '38px'
             },
             '@media (max-width:480px)': {
-              fontSize: '42px'
+              fontSize: '38px'
             },
             '@media (max-width:320px)': {
               fontSize: '34px'
