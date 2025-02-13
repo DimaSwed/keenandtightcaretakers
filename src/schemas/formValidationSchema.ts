@@ -10,10 +10,11 @@ export const formValidationSchema = Yup.object({
 
   telephone: Yup.string()
     .required('Please provide a contact phone number!')
-    .matches(
-      /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/,
-      'Please enter a valid phone number in the format +7 (___) ___-__-__'
-    ),
+    .matches(/^\+?[0-9\s()-]+$/, 'Please enter only numbers'),
+  // .matches(
+  //   /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/,
+  //   'Please enter a valid phone number in the format +7 (___) ___-__-__'
+  // ),
 
   mail: Yup.string()
     .email('Invalid email address')

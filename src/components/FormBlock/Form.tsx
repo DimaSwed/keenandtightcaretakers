@@ -116,11 +116,6 @@ const Form: FC = () => {
     }
   })
 
-  // if (isSubmitted) {
-  //   // Render the thank-you message
-  //   return <SubmittedText />
-  // }
-
   return (
     <>
       <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -234,7 +229,7 @@ const Form: FC = () => {
 
               {/* Phone Number Field */}
               <InputMask
-                mask="+7 (999) 999-99-99"
+                mask="+254 99 999 9999"
                 value={formik.values.telephone}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
